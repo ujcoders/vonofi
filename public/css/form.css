@@ -1,0 +1,235 @@
+/****************************************************************************************************
+Radio Button and Checkbox css start here
+****************************************************************************************************/
+
+label {
+    font-weight: normal;
+    white-space: nowrap;
+    width: 80%;
+}
+
+label + span {
+    float: right;
+	background:#d0e2c7;
+	color:#3b3e3b;
+	font-size:12px;
+	padding:3px 3px;
+	border-radius:3px;
+}
+
+/*label img {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}*/
+
+label input {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+}
+
+label input + span {
+    display: inline-block;
+    border: 1px solid #cbba95;
+    background-color: #fff;
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+	border-radius: 0px;
+}
+
+label input + span + span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    white-space: normal;
+    width: 90%;
+}
+
+label input:checked + span {
+    border: 1px solid #952255;
+}
+
+label input:checked + span:after {
+    content: "";
+    background-color: #952255;
+    height: 7px;
+    width: 7px;
+    display: block;
+    margin: 3px;
+}
+input[type=checkbox]:not(old), input[type=radio ]:not(old) {
+	margin:0;
+	padding:0;
+	opacity:0;
+	display:none;
+}
+input[type=checkbox]:not(old) + label, input[type=radio ]:not(old) + label {
+	display:block;
+}
+input[type=radio ]:not(old) + label > span {
+	display: inline-block;
+	width:15px;
+	height:15px;
+	margin:0px;
+	border: 1px solid #cbba95;
+	border-radius : 10px;
+	background : #fff;
+	vertical-align : top;
+}
+input[type=checkbox]:not(old):checked + label > span, input[type=radio ]:not(old):checked + label > span {
+	background-color: #fff;
+	border: solid 1px #952255;
+
+}
+input[type=radio]:not(old):checked + label > span > span {
+	display: block;
+	width:7px;
+	height:7px;
+	margin:3px;
+	border-radius: 5px;
+	background: #952255;
+}
+
+
+/****************************************************************************************************
+Textfield & Button css start here
+****************************************************************************************************/
+.submit_btn {
+	color: #ffffff;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px #50ab60;
+    background: #50ab60;
+	border-radius:10px;
+	transition:0.4s;
+}
+.submit_btn:hover, .submit_btn:focus, .submit_btn.focus {
+	text-decoration: none;
+	background:#f5d631;
+	border: solid 1px #f5d631;
+}
+
+.submit_btn1 {
+	color: #ffffff;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px #f36d20;
+    background: #f36d20;
+	border-radius:10px;
+	transition:0.4s;
+}
+.submit_btn1:hover, .submit_btn1:focus, .submit_btn1.focus {
+	text-decoration: none;
+	background:#f36d20;
+	border: solid 1px #f36d20;
+}
+.submit_btn2 {
+    color: #fff;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px #a1a1a1;
+    background: #a1a1a1;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.submit_btn2:hover, .submit_btn2:focus, .submit_btn2.focus {
+	text-decoration: none;
+	background:#2bab4a;
+	color: #ffffff;
+}
+.submit_btn3 {
+	color: #ffffff;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px #b29148;
+    background: #b29148;
+	border-radius:5px;
+	transition:0.4s;
+}
+.submit_btn3:hover, .submit_btn3:focus, .submit_btn3.focus {
+	text-decoration: none;
+	background:#9B782C;
+}
+.submit_btn4 {
+	color: #b29148;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px #b29148;
+    background: #ffffff;
+	border-radius:5px;
+	transition:0.4s;
+}
+.submit_btn4:hover, .submit_btn4:focus, .submit_btn4.focus {
+	text-decoration: none;
+	background:#b29148;
+	color: #ffffff;
+}
+.btnsm{
+	font-size: 14px;
+	font-weight: 500;
+	padding: 7px 20px;
+}
+.btnmd{
+	font-size: 15px;
+	font-weight: 500;
+	padding: 10px 30px;
+}
+.btnlg{
+	font-size: 16px;
+	font-weight: 500;
+	padding: 15px 20px;
+}
+.btnfullwidth {
+	width: 100%;
+}
+.searchfield {
+	border: solid 1px #f4f8fb;
+	padding-right:15px;
+	padding-left:15px;
+	font-size: 14px;
+	color:#9a9ea1;
+	width:100%;
+	border-radius:30px 0px 0px 30px;
+	background:#f4f8fb;
+	height:45px;
+}
+.searchfield:focus {
+	outline: none;
+}
+.searchbtn {
+    background: #f4f8fb;
+    width: 45px;
+    border: none;
+    padding: 0px 0px;
+    font-size: 16px;
+    color: #9a9ea1;
+    border-radius: 0px 30px 30px 0px;
+    height: 45px;
+}
+
+
+/****************************************************************************************************
+Media Query css start here
+****************************************************************************************************/
+
+@media screen and (max-width : 992px) {
+	
+	
+	
+}
+
+@media screen and (max-width : 767px) {
+
+	
+	
+
+}
+
+
+@media screen and (max-width : 480px) {
+
+   
+
+}
